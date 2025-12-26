@@ -1,0 +1,9 @@
+- name: variables
+  host: localhost
+  connection: local
+  tasks:
+    - name: print a variable
+      vars:
+        URL: task.google.com
+      ansible.builtin.debug:
+        msg: var URL - {{ URL }}
