@@ -3,6 +3,8 @@
   connection: local
   vars:
     URL: play.google.com
+  vars_file:
+    - just-vars.yml
   tasks:
     - name: print a variable
       vars:
