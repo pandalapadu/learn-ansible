@@ -1,6 +1,8 @@
 - name: Hashicorp Vault connect
   hosts: localhost
   connection: local
+  vars:
+    ansible_python_interpreter: /usr/bin/python3.12   # Ensure Ansible uses Python 3.12
   tasks:
     - name: Read password from Vault
       ansible.builtin.debug:
